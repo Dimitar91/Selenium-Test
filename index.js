@@ -1,4 +1,5 @@
 const { Builder, By, Key, util } = require("selenium-webdriver");
+const BROWSER = "firefox"
 async function examle() {
     let driver = await new Builder().forBrowser("firefox").build();
     await driver.get("http://google.com");
